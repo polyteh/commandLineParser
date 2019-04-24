@@ -12,10 +12,10 @@ using namespace cv;
 using namespace std;
 int main( int argc, char** argv )
 {
-    const String keys =
-            "{@image1        |  ../data/HappyFish.jpg       | default image   }"
-           // "{path         |  ../data/HappyFish.jpg       | default image   }"
-            "{thresh         |          100                 | print this message   }"
+    const string keys =
+            "{@image1        |  ../data/HappyFish.jpg       | image to process   }"
+           // "{path         |  ../data/HappyFish.jpg       | image to process   }"
+            "{thresh         |          100                 | threshold limit   }"
             "{help h usage ? |                              | print this message   }";
 
     CommandLineParser parser(argc, argv, keys);
